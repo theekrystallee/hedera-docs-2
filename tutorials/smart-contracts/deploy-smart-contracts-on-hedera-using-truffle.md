@@ -2,7 +2,7 @@
 
 The [Hedera JSON RPC Relay](https://docs.hedera.com/hedera/core-concepts/smart-contracts/json-rpc-relay) enables developers to use their favorite EVM-compatible tools such as Truffle, Hardhat, Web3JS, EthersJS, to deploy and interact with smart contracts on the Hedera network. As highlighted in a [previous article](https://hedera.com/blog/anything-you-can-do-you-can-do-on-hedera-introducing-the-json-rpc-relay), the relay provides applications and tools seamless access to Hedera while masking implementation complexities and preventing reductions in performance, security, and scalability.
 
-This tutorial shows you how to deploy smart contracts on Hedera using Truffle and the [JSON RPC Relay](../../core-concepts/smart-contracts/deploying-smart-contracts/json-rpc-relay.md) with the following steps:
+This tutorial shows you how to deploy smart contracts on Hedera using Truffle and the [JSON RPC Relay](../../core-concepts/smart-contracts/json-rpc-relay.md) with the following steps:
 
 1. Create an account that has ECDSA keys using the Javascript SDK
 2. Compile a contract using Truffle
@@ -14,7 +14,7 @@ You can find more examples using Truffle, Web3JS, and Hardhat in [this GitHub re
 
 ## **Prerequisites**
 
-* Get a[ ](https://portal.hedera.com/register)[Hedera testnet account](https://portal.hedera.com/register)&#x20;
+* Get a[ ](https://portal.hedera.com/register)[Hedera testnet account](https://portal.hedera.com/register)
 * This[ Codesandbox](https://codesandbox.io/s/hedera-example-json-rpc-truffle-q6kibt?file=/create-account.js) is already setup for you to try this example
   * Fork the sandbox
   * Remember to provide your testnet account credentials for the _**operator**_ in the _**.env**_ file
@@ -189,7 +189,7 @@ You can obtain more information about the newly deployed contract using the [mir
 
 </details>
 
-Now you know how to deploy smart contracts on Hedera using Truffle and the JSON RPC Relay. The first part of this example used the Hedera [JavaScript SDK](../../sdks-and-apis/sdks/#hedera-services-code-sdks). However, you can try this with the other officially supported SDKs for Java and Go.&#x20;
+Now you know how to deploy smart contracts on Hedera using Truffle and the JSON RPC Relay. The first part of this example used the Hedera [JavaScript SDK](../../sdks-and-apis/sdks/#hedera-services-code-sdks). However, you can try this with the other officially supported SDKs for Java and Go.
 
 ***
 

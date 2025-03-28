@@ -2,7 +2,7 @@
 
 ## Deploying a Contract Using the Hedera Smart Contract Service
 
-This tutorial will walk you through writing and compiling a Solidity smart contract. You'll then deploy and interact with it on the Hedera network using the [Hedera Smart Contract Service (HSCS)](../../support-and-community/glossary.md#hedera-smart-contract-service-hscs) and familiar EVM tools like Ethers.js, connecting via the [JSON-RPC relay](../../core-concepts/smart-contracts/deploying-smart-contracts/json-rpc-relay.md).&#x20;
+This tutorial will walk you through writing and compiling a Solidity smart contract. You'll then deploy and interact with it on the Hedera network using the [Hedera Smart Contract Service (HSCS)](../../support-and-community/glossary.md#hedera-smart-contract-service-hscs) and familiar EVM tools like Ethers.js, connecting via the [JSON-RPC relay](../../core-concepts/smart-contracts/json-rpc-relay.md).
 
 #### What you will accomplish
 
@@ -25,7 +25,7 @@ By the end of this tutorial, you will be able to:
 Before you begin, you should have **completed** the following tutorials:
 
 * [x] [Create and Fund Your Hedera Testnet Account](../../tutorials/more-tutorials/create-and-fund-your-hedera-testnet-account.md)
-* [x] [Environment Setup](../environment-setup.md)&#x20;
+* [x] [Environment Setup](../environment-setup.md)
 * [x] [Configure RPC Connection](../../tutorials/more-tutorials/json-rpc-connections/) ( not required for Gitpod )
 
 ***
@@ -53,7 +53,7 @@ cd ../
 ### Start the JSON-RPC Relay
 
 {% hint style="info" %}
-#### This step is not required for Gitpod
+**This step is not required for Gitpod**
 {% endhint %}
 
 From the root directory of the `hedera-future-world-js` project, run a Hedera JSON-RPC Relay instance with the below script:
@@ -73,9 +73,9 @@ The Hedera JSON-RPC Relay connects your dApps to Hedera’s EVM-compatible nodes
 * Enables smooth communication between dApps and Hedera.
 
 {% hint style="info" %}
-#### Next: Code Walkthrough
+**Next: Code Walkthrough**
 
-In the next code walkthrough step, you can follow along or skip ahead to [Step 3](deploy-a-contract.md#step-3-deploy-contract-and-verify-on-hashscan-mirror-node-explorer) to execute and deploy the contract. If you decide to skip ahead, [compile the smart contract ](deploy-a-contract.md#compile-the-smart-contract)first.&#x20;
+In the next code walkthrough step, you can follow along or skip ahead to [Step 3](deploy-a-contract.md#step-3-deploy-contract-and-verify-on-hashscan-mirror-node-explorer) to execute and deploy the contract. If you decide to skip ahead, [compile the smart contract ](deploy-a-contract.md#compile-the-smart-contract)first.
 {% endhint %}
 
 ***
@@ -124,7 +124,7 @@ _**Note**: This smart contract has two functions, `introduce` and `greet`. You w
 
 ### Compile the Smart Contract
 
-Once you have completed writing the smart contract in Solidity, you must compile it using the Solidity compiler.&#x20;
+Once you have completed writing the smart contract in Solidity, you must compile it using the Solidity compiler.
 
 Install the dependencies using `npm`. You will also need to install a Solidity compiler using the `--global` flag.
 
@@ -162,7 +162,7 @@ After compiling your smart contract, your project directory should look similar 
 
 #### Initialize Wallet and RPC Connection
 
-The following code snippet from the `script-hscs-smart-contract` file will read your credentials from the `.env` file to initialize your wallet (operator account) and establish an RPC connection to interact with the Hedera network.&#x20;
+The following code snippet from the `script-hscs-smart-contract` file will read your credentials from the `.env` file to initialize your wallet (operator account) and establish an RPC connection to interact with the Hedera network.
 
 {% code title="script-hscs-smart-contract.js" %}
 ```javascript
@@ -190,12 +190,12 @@ async function scriptHscsSmartContract() {
 {% endcode %}
 
 {% hint style="info" %}
-**I**f you have not configured your RPC connection to the Hedera network, do so by choosing one of the options from the [How to Connect to Hedera Networks Over RPC](../../tutorials/more-tutorials/json-rpc-connections/) tutorial before moving on to the next step. Then run `./util/04-rpcrelay-run.sh` to run a Hedera JSON-RPC relay instance.&#x20;
+**I**f you have not configured your RPC connection to the Hedera network, do so by choosing one of the options from the [How to Connect to Hedera Networks Over RPC](../../tutorials/more-tutorials/json-rpc-connections/) tutorial before moving on to the next step. Then run `./util/04-rpcrelay-run.sh` to run a Hedera JSON-RPC relay instance.
 {% endhint %}
 
 #### Prepare Smart Contract for Deployment
 
-This section of the code reads the compiled ABI and bytecode files of the smart contract using the `fs` (file system) module. The first 32 characters of both the ABI and bytecode are then displayed in the console to confirm that they have been successfully read and are ready for deployment.&#x20;
+This section of the code reads the compiled ABI and bytecode files of the smart contract using the `fs` (file system) module. The first 32 characters of both the ABI and bytecode are then displayed in the console to confirm that they have been successfully read and are ready for deployment.
 
 {% code title="script-hscs-smart-contract.js" %}
 ```javascript
@@ -240,7 +240,7 @@ logger.log('Smart contract deployment Hashscan URL:\n',
 
 ### Write Data to the Smart Contract
 
-Next, you will invoke the `introduce` function on your deployed smart contract.  This function call initiates a state-changing transaction on the smart contract.&#x20;
+Next, you will invoke the `introduce` function on your deployed smart contract. This function call initiates a state-changing transaction on the smart contract.
 
 {% code title="script-hscs-smart-contract.js" %}
 ```javascript
@@ -382,7 +382,7 @@ Open `myContractWriteTxExplorerUrl` in your browser. This should be the same pag
 
 ## Complete
 
-Congratulations, you have completed the **Deploy a Contract** tutorial in the Getting Started series for the EVM Developers learning path!  🎉🎉🎉!
+Congratulations, you have completed the **Deploy a Contract** tutorial in the Getting Started series for the EVM Developers learning path! 🎉🎉🎉!
 
 You learned how to:
 
@@ -396,7 +396,7 @@ You learned how to:
 
 ## Next Steps
 
-Explore the tutorials below to discover all the EVM-compatible tools available on Hedera. Happy building!&#x20;
+Explore the tutorials below to discover all the EVM-compatible tools available on Hedera. Happy building!
 
 {% embed url="https://docs.hedera.com/hedera/tutorials/smart-contracts/deploy-a-smart-contract-using-hardhat-hedera-json-rpc-relay" %}
 

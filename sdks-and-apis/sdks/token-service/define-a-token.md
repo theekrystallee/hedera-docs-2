@@ -9,7 +9,7 @@ Create a new fungible or non-fungible token (NFT) on the Hedera network. After y
 You can also create, access, or transfer HTS tokens using smart contracts - see [Hedera Service Solidity Libraries](https://docs.hedera.com/guides/docs/sdks/smart-contracts/hedera-service-solidity-libraries) and [Supported ERC Token Standards](https://docs.hedera.com/guides/core-concepts/smart-contracts/supported-erc-token-standards).
 
 {% hint style="warning" %}
-#### Token Keys
+**Token Keys**
 
 * If any of the token key types (KYC key, Wipe key, Metadata key, etc) are not set during the creation of the token, you will not be able to update the token and add them in the future
 * If any of the token key types (KYC key, Wipe key, Metadata key, etc) are set during the creation of the token, you will not be able to remove them in the future
@@ -25,8 +25,8 @@ For non-fungible tokens, the token ID represents an NFT class. Once the token is
 
 #### **Token Properties**
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="https://github.com/theekrystallee/docs-plugin-v5/blob/main/sdks-and-apis/sdks/token-service/broken-reference/README.md" %}
+[https://github.com/theekrystallee/docs-plugin-v5/blob/main/sdks-and-apis/sdks/token-service/broken-reference/README.md](https://github.com/theekrystallee/docs-plugin-v5/blob/main/sdks-and-apis/sdks/token-service/broken-reference/README.md)
 {% endcontent-ref %}
 
 **Transaction Signing Requirements**

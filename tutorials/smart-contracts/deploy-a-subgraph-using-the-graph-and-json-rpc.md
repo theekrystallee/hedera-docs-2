@@ -5,7 +5,7 @@ In this tutorial, you'll learn how to create and deploy a subgraph using The Gra
 By the end of this tutorial, you'll be able to configure a mirror node, query data from your subgraph using the GraphQL API, and integrate it into your dApp. You'll also have a better understanding of how to define custom data schemas, indexing rules, and queries for your subgraph, allowing you to tailor it to your specific use case.
 
 {% hint style="info" %}
-**Note:**  While it is possible to present and interact with HTS tokens in a similar manner as ERC-20/721 tokens, the network is presently unable to capture all the expected ERC-20/721 event logs. In other words, if ERC-like operations are conducted on HTS tokens, not all of them will be captured in smart contract event logging.
+**Note:** While it is possible to present and interact with HTS tokens in a similar manner as ERC-20/721 tokens, the network is presently unable to capture all the expected ERC-20/721 event logs. In other words, if ERC-like operations are conducted on HTS tokens, not all of them will be captured in smart contract event logging.
 {% endhint %}
 
 ***
@@ -191,7 +191,7 @@ export function handleGreetingSet(event: GreetingSet): void {
 
 #### Graph Node Configuration
 
-To connect a local graph node to a remote network, such as testnet, mainnet, or previewnet, use a [docker-compose](https://github.com/graphprotocol/graph-node/tree/master/docker#docker-compose) setup. The API endpoint that connects the graph node to the network is specified within the `environment` object of the `docker-compose.yaml` file [here](https://github.com/hashgraph/hedera-subgraph-example/blob/main/graph-node/docker-compose.yaml). Add the API endpoint URL in the `ethereum` field in the `environment` object. For this tutorial, we will use the [Hashio Testnet ](https://www.hashgraph.com/hashio/)instance of the Hedera JSON-RPC relay, but _any_ [JSON-RPC provider](../../core-concepts/smart-contracts/deploying-smart-contracts/json-rpc-relay.md) supported by the community can be used.
+To connect a local graph node to a remote network, such as testnet, mainnet, or previewnet, use a [docker-compose](https://github.com/graphprotocol/graph-node/tree/master/docker#docker-compose) setup. The API endpoint that connects the graph node to the network is specified within the `environment` object of the `docker-compose.yaml` file [here](https://github.com/hashgraph/hedera-subgraph-example/blob/main/graph-node/docker-compose.yaml). Add the API endpoint URL in the `ethereum` field in the `environment` object. For this tutorial, we will use the [Hashio Testnet ](https://www.hashgraph.com/hashio/)instance of the Hedera JSON-RPC relay, but _any_ [JSON-RPC provider](../../core-concepts/smart-contracts/json-rpc-relay.md) supported by the community can be used.
 
 This is what the `ethereum` field should look like after you enter your API endpoint URL:
 
@@ -458,7 +458,7 @@ services:
 
 </details>
 
-#### _Congratulations! You've successfully deployed a subgraph to your local graph node!_&#x20;
+#### _Congratulations! You've successfully deployed a subgraph to your local graph node!_
 
 Once the node finishes indexing, you can access the GraphQL API at: [http://localhost:8000/subgraphs/name/Greeter](http://localhost:8000/subgraphs/name/Greeter)
 
@@ -503,4 +503,4 @@ Follow the steps below to execute the query and fetch the indexed data from the 
 
 **➡** [**Subgraph Example**](https://github.com/hashgraph/hedera-json-rpc-relay/tree/main/tools/subgraph-example)
 
-<table data-card-size="large" data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><p>Writer: Krystal, Technical Writer</p><p><a href="https://github.com/theekrystallee">GitHub</a> | <a href="https://hashnode.com/@theekrystallee">Hashnode</a></p></td><td><a href="https://github.com/theekrystallee">https://github.com/theekrystallee</a></td></tr><tr><td align="center"><p>Editor: Simi, Sr. Software Manager</p><p><a href="https://github.com/SimiHunjan">GitHub</a> | <a href="https://www.linkedin.com/in/shunjan/">LinkedIn</a></p></td><td><a href="https://www.linkedin.com/in/shunjan/">https://www.linkedin.com/in/shunjan/</a></td></tr><tr><td align="center"><p>Editor: Georgi, Sr Software Dev (LimeChain) </p><p><a href="https://github.com/georgi-l95">GitHub</a> | <a href="https://www.linkedin.com/in/georgi-dimitorv-lazarov/">LinkedIn</a></p></td><td><a href="https://github.com/georgi-l95">https://github.com/georgi-l95</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><p>Writer: Krystal, Technical Writer</p><p><a href="https://github.com/theekrystallee">GitHub</a> | <a href="https://hashnode.com/@theekrystallee">Hashnode</a></p></td><td><a href="https://github.com/theekrystallee">https://github.com/theekrystallee</a></td></tr><tr><td align="center"><p>Editor: Simi, Sr. Software Manager</p><p><a href="https://github.com/SimiHunjan">GitHub</a> | <a href="https://www.linkedin.com/in/shunjan/">LinkedIn</a></p></td><td><a href="https://www.linkedin.com/in/shunjan/">https://www.linkedin.com/in/shunjan/</a></td></tr><tr><td align="center"><p>Editor: Georgi, Sr Software Dev (LimeChain)</p><p><a href="https://github.com/georgi-l95">GitHub</a> | <a href="https://www.linkedin.com/in/georgi-dimitorv-lazarov/">LinkedIn</a></p></td><td><a href="https://github.com/georgi-l95">https://github.com/georgi-l95</a></td></tr></tbody></table>
